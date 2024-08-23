@@ -1,7 +1,7 @@
 from scapy.all import sniff, IP, TCP, UDP, Raw
 
 def packet_callback(packet):
-    """Callback function to process captured packets."""
+    
     if IP in packet:
         ip_src = packet[IP].src
         ip_dst = packet[IP].dst
